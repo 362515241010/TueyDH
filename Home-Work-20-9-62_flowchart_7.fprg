@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-21 07:50:55 PM"/>
+        <attribute name="created" value="QWRtaW47TEFQVE9QLUNLSE1JQUUzOzIwMTktMDktMjE7MDc6MzI6NTUgUE07MjgzNw=="/>
+        <attribute name="edited" value="QWRtaW47TEFQVE9QLUNLSE1JQUUzOzIwMTktMDktMjE7MDc6NTA6NTUgUE07MjsyOTQ2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="max" type="Integer" array="False" size=""/>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <assign variable="max" expression="0"/>
+            <input variable="number"/>
+            <while expression="number &gt; 0">
+                <if expression="number &gt; max">
+                    <then>
+                        <assign variable="max" expression="number"/>
+                    </then>
+                    <else/>
+                </if>
+                <input variable="number"/>
+            </while>
+            <output expression="max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
